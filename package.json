@@ -12,6 +12,7 @@
   },
   "scripts": {
     "build": "tsup",
+    "prepare": "pnpm run build",
     "release": "pnpm run build && changeset publish",
     "lint": "tsc",
     "prepare:market-map": "tsx scripts/constants/generate-market-map.ts",
